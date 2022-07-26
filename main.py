@@ -1,6 +1,7 @@
 import sys
 from config import DB_DETAILS
 from util import get_tables
+from read import read_table
 
 
 def main():
@@ -8,7 +9,9 @@ def main():
     db = DB_DETAILS[env]
     tables = get_tables('table_list')
     for table in tables['table_name']:
-        print(table)
+        data, column_name = read_table(db, table)
+        for records in data:
+            print(records)
 
 
 if __name__ == '__main__':
