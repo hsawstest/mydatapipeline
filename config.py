@@ -9,7 +9,6 @@ DB_DETAILS = {
         },
         'TARGET_DB': {
             'DB_TYPE': 'mysql',
-            'DB_TYPE': 'mysql',
             'DB_HOST': 'mydb.cyzqinmfwudr.us-east-1.rds.amazonaws.com',
             'DB_NAME': 'TESTDB',
             'DB_USER': 'hsawstest',
